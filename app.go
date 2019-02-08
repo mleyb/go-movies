@@ -84,6 +84,15 @@ func DeleteMovie(w http.ResponseWriter, r *http.Request) {
 	respondWithJson(w, http.StatusOK, map[string]string{"result": "success"})
 }
 
+// Parse the configuration file 'config.toml', and establish a connection to DB
+func init() {
+	cfg.Read()
+
+	db.Server = cfg.Server
+	db.Database = cfg.Database
+	db.Connect()
+}
+
 func main() {
 	router := mux.NewRouter()
 
