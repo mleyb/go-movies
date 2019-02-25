@@ -9,9 +9,9 @@ import (
 
 	"github.com/gorilla/mux"
 
-	"github.com/mleyb/go-api-mongo/config"
-	"github.com/mleyb/go-api-mongo/model"
-	"github.com/mleyb/go-api-mongo/dao"
+	"github.com/mleyb/go-movies/config"
+	"github.com/mleyb/go-movies/model"
+	"github.com/mleyb/go-movies/dao"
 )
 
 var cfg = config.Config{}
