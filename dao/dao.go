@@ -3,7 +3,7 @@ package dao
 import (
 	"log"
 
-	"github.com/mleyb/go-api-mongo/model"
+	"github.com/mleyb/go-movies/model"
 
 	mgo "gopkg.in/mgo.v2"
 	"gopkg.in/mgo.v2/bson"
